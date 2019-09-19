@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="action">
+        <bike-filter (selectedFilter)="onSelectedFilter($event)"></bike-filter>
+        <span class="cart" (mouseenter)="showCartInfo()" (mouseleave)="hiddenCartInfo()">
+            <img src="https://cdn0.iconfinder.com/data/icons/shopping-cart-26/1000/Shopping-Basket-03-512.png">
+            <span class="item-number" *ngIf="caculateItemQty()">{{caculateItemQty()}}</span>
+            <div class="cart-list" *ngIf="showCartList">
+                    <div *ngIf="cartList.length">
+                        <div *ngFor="let item of cartList">
+                            <cart-card [item]="item"></cart-card>
+                        </div>
+                    </div>
+                    <div *ngIf=" !cartList.length" class="cart-empty">
+                        Your cart is empty.
+                    </div>
+            </div>
+        </span>
+
+    </div>
+   
+    <div class="items">
+            <div *ngFor="let bike of rentalBikes">
+                <div class="item">
+                    <item-card [bike]="bike" (selctedBike)="onSelctedBike($event)"></item-card>
+                </div>
+            </div>
+    </div>
+</div>
+
+<popup-dialog *ngIf="showPopup" [message]="popupMessage"></popup-dialog>

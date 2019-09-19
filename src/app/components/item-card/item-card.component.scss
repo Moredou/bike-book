@@ -1,0 +1,47 @@
+:host{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.item-container{
+    width: 100%;
+    .item-image{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .item-info{
+        width: 94%;
+        margin: 5px 3% 5px 3%;
+        .item-name{
+            display:inline-block;
+        }
+        .item-price{
+            display:inline-block;
+            float:right;
+
+        }
+    }
+    .item-type{
+        width: 100%;
+        padding: 5px 3%;
+    }
+
+    .add-btn{
+        width: 100%;
+        margin: 10px 0px;
+        cursor: pointer;
+        a{
+            display:inline-block;
+            width: 90%;
+            background-color: #eebc60;
+            padding: 10px 5%;
+            text-align: center;
+            border-radius: 5px;
+            
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<div class="container">
+    <select  #selectedType (change)="filterType(selectedType.value)">
+        <option value="all" >All</option>
+        <option value="asc" >Price: Low to High</option>
+        <option value="desc" >Price: High to Low</option>
+        <option value="bike" >Type: Bike</option>
+        <option value="accessory" >Type: Accessory</option>
+        <option value="addon" >Type: Addon</option>
+    </select>
+</div>

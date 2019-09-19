@@ -1,0 +1,16 @@
+<div class="item-container">
+    <div class="item-image">
+        <img [src]="bike?.image">
+    </div>
+    <div class="item-info">
+        <div class="item-name">{{bike?.name}}</div>
+        <div class="item-price">${{bike?.price}}</div>
+    </div>
+    <div class="item-type">
+            {{bike?.product_type}}
+    </div>
+    <div class="add-btn">
+        <a (click)="addToCart(bike)">Add to Cart</a>
+    </div>
+   
+</div>

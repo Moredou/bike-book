@@ -1,0 +1,26 @@
+:host{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid lightgray;
+
+    .item-image{
+        display:inline-block;
+        width: 80px;
+        img{
+            padding: 5px 10px;
+            width: 60px;
+        }
+    }
+    .item-info{
+        display:inline-block;
+        vertical-align: top;
+        padding: 5px;
+    }
+}

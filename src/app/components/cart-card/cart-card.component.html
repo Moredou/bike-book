@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="item-image">
+        <img [src]="item?.image">
+    </div>
+
+    <div class="item-info">
+        <div class="item-name">{{item?.name}}</div>
+        <div class="item-type">{{item?.product_type}}</div>
+        <div class="price">${{item?.price}} x {{item?.quantity}}</div>
+    </div>
+</div>
